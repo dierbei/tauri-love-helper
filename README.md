@@ -52,6 +52,31 @@ npm install --save-dev @tauri-apps/cli
 npm run tauri dev
 ```
 
+### 构建应用
+
+```bash
+# 构建 Web 版本
+npm run build
+
+# 构建桌面应用
+npm run tauri build
+
+# 构建 Android 应用
+npm run tauri android build -- --target aarch64
+```
+
+### Android 构建要求
+
+- Android SDK
+- Android NDK
+- Java Development Kit (JDK) 17+
+- Android Studio (用于调试)
+
+确保已设置以下环境变量：
+- `ANDROID_HOME` 或 `ANDROID_SDK_ROOT`
+- `JAVA_HOME`
+- `NDK_HOME`
+
 ## 项目结构
 
 ```
