@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Heart, X } from "lucide-react"
@@ -49,6 +49,11 @@ export default function SoulMatchPage() {
   const [direction, setDirection] = useState<"right" | "left" | null>(null)
   const [isMatching, setIsMatching] = useState(false)
   const [matchedProfile, setMatchedProfile] = useState<(typeof MATCH_PROFILES)[0] | null>(null)
+  const [isLoaded, setIsLoaded] = useState(false)
+
+  useEffect(() => {
+    setIsLoaded(true)
+  }, [])
 
   const currentProfile = MATCH_PROFILES[currentIndex]
 
@@ -71,6 +76,10 @@ export default function SoulMatchPage() {
         setDirection(null)
       }, 300)
     }
+  }
+
+  if (!isLoaded) {
+    return <div className="min-h-screen bg-gradient-to-b from-blue-400 to-cyan-300 p-4"></div>
   }
 
   return (

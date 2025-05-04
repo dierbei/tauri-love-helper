@@ -9,8 +9,8 @@ import { Settings, Edit, Camera, LogOut } from "lucide-react"
 // 模拟用户数据
 const USER = {
   id: "me",
-  name: "我的昵称",
-  avatar: "/placeholder.svg?height=200&width=200",
+  name: "鲁班八号",
+  avatar: "/images/user-avatar.png?height=200&width=200",
   bio: "这是我的个人简介，可以编辑修改。",
   gender: "保密",
   age: 25,
