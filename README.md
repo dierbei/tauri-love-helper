@@ -28,7 +28,7 @@
 
 1. 克隆项目
 ```bash
-git clone [项目地址]
+git clone git@github.com:dierbei/tauri-love-helper.git
 cd tauri-love-helper
 ```
 
