@@ -1,6 +1,6 @@
 # Love - 恋爱聊天APP
 
-一个基于 Next.js 和 Tauri 开发的跨平台聊天应用，提供 AI 驱动的聊天体验。
+一个基于 Vite 和 Tauri 开发的跨平台聊天应用，提供 AI 驱动的聊天体验。
 
 ## 功能特点
 
@@ -10,7 +10,7 @@
 
 ## 技术栈
 
-- **前端框架**: Next.js 15
+- **前端框架**: Vite
 - **UI 组件**: Radix UI + Tailwind CSS
 - **桌面端**: Tauri 2.0
 - **AI 对话**: DeepSeek API
@@ -62,34 +62,6 @@ npm run tauri android build -- --target aarch64
 - `ANDROID_HOME` 或 `ANDROID_SDK_ROOT`
 - `JAVA_HOME`
 - `NDK_HOME`
-
-## 项目结构
-
-```
-tauri-love-helper/
-├── app/                # Next.js 应用目录
-│   ├── api/           # API 路由
-│   ├── components/    # React 组件
-│   └── ...
-├── public/            # 静态资源
-├── src-tauri/         # Tauri 桌面应用代码
-└── ...
-```
-
-### 环境变量
-
-项目使用以下环境变量：
-
-- `DEEPSEEK_API_KEY`: DeepSeek API 密钥
-- `DEEPSEEK_API_BASE_URL`: DeepSeek API 基础 URL
-
-## 贡献指南
-
-1. Fork 项目
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 创建 Pull Request
 
 ## 许可证
 
